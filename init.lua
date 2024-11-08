@@ -28,3 +28,4 @@ require("gruvbox").setup({
 vim.cmd("colorscheme gruvbox")
 
 vim.g.autoformat = false
+vim.cmd("set nornu")
