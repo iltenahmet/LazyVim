@@ -29,3 +29,6 @@ vim.cmd("colorscheme gruvbox")
 
 vim.g.autoformat = false
 vim.cmd("set nornu")
+
+vim.cmd("tnoremap <Esc> <C-\\><C-n>")
+
