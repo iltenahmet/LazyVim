@@ -25,10 +25,9 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = false,
 })
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme github_dark_default")
 
 vim.g.autoformat = false
 vim.cmd("set nornu")
 
 vim.cmd("tnoremap <Esc> <C-\\><C-n>")
-
