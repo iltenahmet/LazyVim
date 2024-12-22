@@ -43,11 +43,12 @@ return {
     },
   },
   { "rebelot/kanagawa.nvim" },
-  { "projekt0n/github-nvim-theme", name = "github-theme" },
+  { "projekt0n/github-nvim-theme",
+    name = "github-theme",
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vscode",
     },
   },
 }
