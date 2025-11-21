@@ -10,6 +10,10 @@ return {
       require("gruvbox").setup({
         contrast = "hard",
       })
+
+      vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", {
+        fg = "#8c7e70",
+      })
     end,
   },
 
