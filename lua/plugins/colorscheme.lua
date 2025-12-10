@@ -18,9 +18,28 @@ return {
   },
 
   {
+    "loctvl842/monokai-pro.nvim",
+    priority = 1000,
+    config = function()
+      require("monokai-pro").setup({
+        filter = "classic",
+        transparent_background = false,
+        background_clear = {},
+        override = function(c)
+          return {
+            NeoTreeDimText = { fg = c.base.white },
+            Directory = { fg = c.base.white },
+            NonText = { fg = c.base.dimmed4 },
+          }
+        end,
+      })
+    end,
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "monokai-pro",
     },
   },
 }
