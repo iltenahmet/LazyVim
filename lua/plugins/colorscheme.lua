@@ -37,9 +37,31 @@ return {
   },
 
   {
+    "bluz71/vim-moonfly-colors",
+    name = "moonfly",
+    lazy = false,
+    priority = 1000,
+  },
+
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = false,
+    priority = 1000,
+  },
+
+  {
+    "Mofiqul/adwaita.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.adwaita_darker = true
+    end,
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "monokai-pro",
+      colorscheme = "monokai-pro-classic",
     },
   },
 }
