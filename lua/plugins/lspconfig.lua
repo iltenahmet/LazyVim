@@ -3,9 +3,16 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        ts_ls = {
+        vtsls = {
           root_dir = vim.fn.getcwd(),
-        }
+          settings = {
+            typescript = {
+              tsserver = {
+                maxTsServerMemory = 8192,
+              },
+            },
+          },
+        },
       },
     },
   },
