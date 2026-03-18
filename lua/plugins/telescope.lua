@@ -4,11 +4,21 @@ return {
     opts = {
       defaults = {
         file_ignore_patterns = { "^.git/" },
-        hidden = true,
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case",
+          "--no-ignore",
+          "--hidden",
+        },
       },
       pickers = {
         find_files = {
-          hidden = true,
+          find_command = { "rg", "--files", "--no-ignore", "--hidden", "--glob", "!.git/*" },
         },
       },
     },
