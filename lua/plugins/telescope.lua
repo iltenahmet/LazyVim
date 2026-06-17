@@ -3,7 +3,7 @@ return {
     "nvim-telescope/telescope.nvim",
     opts = {
       defaults = {
-        file_ignore_patterns = { "^.git/" },
+        file_ignore_patterns = { "^.git/", "%.log$" },
         vimgrep_arguments = {
           "rg",
           "--color=never",
